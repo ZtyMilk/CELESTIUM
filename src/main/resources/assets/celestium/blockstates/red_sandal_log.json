@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "celestium:block/red_sandal_log_column"
+    },
+    "axis=z": {
+      "model": "celestium:block/red_sandal_log_horizontal"
+    },
+    "axis=x": {
+      "model": "celestium:block/red_sandal_log_horizontal",
+      "y": 90
+    }
+  }
+}

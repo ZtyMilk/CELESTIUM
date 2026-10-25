@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    "celestium:red_sandal_log"
+  ],
+  "result": {
+    "count": 4,
+    "id": "celestium:red_sandal_planks"
+  }
+}

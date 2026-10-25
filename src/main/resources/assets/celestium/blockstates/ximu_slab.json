@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "celestium:block/ximu_slab"
+    },
+    "type=top": {
+      "model": "celestium:block/ximu_slab_top"
+    },
+    "type=double": {
+      "model": "celestium:block/ximu_planks"
+    }
+  }
+}
+

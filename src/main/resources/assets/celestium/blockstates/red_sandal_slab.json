@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "celestium:block/red_sandal_slab"
+    },
+    "type=top": {
+      "model": "celestium:block/red_sandal_slab_top"
+    },
+    "type=double": {
+      "model": "celestium:block/red_sandal_planks"
+    }
+  }
+}
+

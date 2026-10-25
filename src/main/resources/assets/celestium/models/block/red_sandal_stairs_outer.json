@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "celestium:block/red_sandal_planks",
+    "top": "celestium:block/red_sandal_planks",
+    "side": "celestium:block/red_sandal_planks"
+  }
+}
+

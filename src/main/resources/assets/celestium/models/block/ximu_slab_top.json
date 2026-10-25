@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "celestium:block/ximu_planks",
+    "top": "celestium:block/ximu_planks",
+    "side": "celestium:block/ximu_planks"
+  }
+}
+

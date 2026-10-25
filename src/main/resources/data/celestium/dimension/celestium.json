@@ -1,0 +1,11 @@
+{
+  "type": "celestium:celestium_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "celestium:celestium_floating_islands",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "celestium:celestial_plains"
+    }
+  }
+}

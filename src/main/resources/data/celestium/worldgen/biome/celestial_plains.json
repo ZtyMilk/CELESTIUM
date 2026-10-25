@@ -1,0 +1,38 @@
+{
+  "carvers": [],
+  "downfall": 0.0,
+  "effects": {
+    "foliage_color": "#F6C85F",
+    "water_color": "#f6c85f"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "celestium:patch_celestial_grass_placed",
+      "celestium:red_sandal_trees_placed",
+      "celestium:sandal_trees_placed",
+      "celestium:ximu_trees_placed"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.5
+}

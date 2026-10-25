@@ -1,0 +1,4 @@
+accessWidener v2 named
+
+# 解锁浮空岛噪波路由器方法为 accessible (public)
+accessible method net/minecraft/world/level/levelgen/NoiseRouterData floatingIslands (Lnet/minecraft/core/HolderGetter;Lnet/minecraft/core/HolderGetter;)Lnet/minecraft/world/level/levelgen/NoiseRouter;
