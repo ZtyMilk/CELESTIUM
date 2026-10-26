@@ -1,0 +1,15 @@
+{
+  "name": "celestium:seven_treasure_terrace",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "celestium:seven_treasure_terrace",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

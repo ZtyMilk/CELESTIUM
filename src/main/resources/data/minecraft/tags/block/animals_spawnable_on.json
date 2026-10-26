@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "celestium:celestial_grass_block",
+    "celestium:celestial_dirt",
+    "celestium:lunar_jade_stone",
+    "celestium:cinnabar_stone",
+    "celestium:celestial_stone",
+    "celestium:white_jade_block",
+    "celestium:celestial_cloud_block",
+    "celestium:ziwei_spirit_turf",
+    "celestium:ziwei_cloud_stone",
+    "celestium:emerald_moss_turf",
+    "celestium:emerald_jade_stone",
+    "celestium:golden_celestial_loam",
+    "celestium:glazed_sunstone"
+  ]
+}

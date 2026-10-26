@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  F",
+    " J ",
+    "J  "
+  ],
+  "key": {
+    "J": "celestium:white_jade_pillar",
+    "F": "minecraft:feather"
+  },
+  "result": {
+    "id": "celestium:celestial_whisk",
+    "count": 1
+  }
+}

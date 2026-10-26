@@ -1,0 +1,69 @@
+{
+  "carvers": [],
+  "creature_spawn_probability": 0.08,
+  "downfall": 0.8,
+  "effects": {
+    "foliage_color": "#52b788",
+    "grass_color": "#74c69d",
+    "water_color": "#26a69a"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "celestium:ximu_trees_placed",
+      "celestium:patch_celestial_grass_placed",
+      "celestium:patch_lotus_placed",
+      "celestium:patch_taiqing_herbs_placed",
+      "celestium:patch_dao_tea_placed",
+      "celestium:patch_palace_lantern_placed",
+      "celestium:patch_incense_burner_placed"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "celestium:celestial_crane",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 8
+      },
+      {
+        "type": "celestium:celestial_deer",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 4
+      },
+      {
+        "type": "celestium:saddanta",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 2
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": [
+      {
+        "type": "celestium:spirit_carp",
+        "maxCount": 5,
+        "minCount": 2,
+        "weight": 10
+      }
+    ]
+  },
+  "temperature": 0.5
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "celestium:seven_treasure_terrace",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 22,
+    "separation": 10,
+    "salt": 664455
+  }
+}

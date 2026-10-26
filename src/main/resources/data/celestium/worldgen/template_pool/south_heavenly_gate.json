@@ -1,0 +1,15 @@
+{
+  "name": "celestium:south_heavenly_gate",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "celestium:south_heavenly_gate",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}

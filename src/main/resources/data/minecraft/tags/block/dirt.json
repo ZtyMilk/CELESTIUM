@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "celestium:celestial_grass_block",
-    "celestium:celestial_dirt"
+    "celestium:celestial_dirt",
+    "celestium:ziwei_spirit_turf",
+    "celestium:emerald_moss_turf",
+    "celestium:golden_celestial_loam"
   ]
 }

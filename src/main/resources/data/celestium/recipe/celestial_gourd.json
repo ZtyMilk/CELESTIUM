@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "C C",
+    " C "
+  ],
+  "key": {
+    "G": "minecraft:gold_nugget",
+    "C": "celestium:celestial_cloud_block"
+  },
+  "result": {
+    "id": "celestium:celestial_gourd",
+    "count": 1
+  }
+}

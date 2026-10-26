@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "celestium:scripture_pagoda",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 30,
+    "separation": 14,
+    "salt": 45678901
+  }
+}

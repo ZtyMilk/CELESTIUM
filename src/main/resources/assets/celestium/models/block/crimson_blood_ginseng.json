@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "celestium:block/crimson_blood_ginseng"
+  }
+}

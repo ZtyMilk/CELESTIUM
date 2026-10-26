@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "celestium:block/white_jade_pillar_top",
+    "side": "celestium:block/dragon_totem_pillar"
+  }
+}

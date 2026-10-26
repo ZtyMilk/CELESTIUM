@@ -100,11 +100,291 @@
     "vein_toggle": 0.0
   },
   "ore_veins_enabled": false,
-  "sea_level": -64,
+  "sea_level": 0,
   "spawn_target": [],
   "surface_rule": {
     "type": "minecraft:sequence",
     "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "celestium:lunar_frostpeak"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "minecraft:stone_depth",
+            "add_surface_depth": false,
+            "offset": 0,
+            "secondary_depth_range": 0,
+            "surface_type": "floor"
+          },
+          "then_run": {
+            "type": "minecraft:block",
+            "result_state": {
+              "Name": "celestium:lunar_jade_stone"
+            }
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "celestium:vermilion_peak"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "minecraft:stone_depth",
+            "add_surface_depth": false,
+            "offset": 0,
+            "secondary_depth_range": 0,
+            "surface_type": "floor"
+          },
+          "then_run": {
+            "type": "minecraft:block",
+            "result_state": {
+              "Name": "celestium:cinnabar_stone"
+            }
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "celestium:ziwei_cloud_domain"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": false,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:ziwei_spirit_turf"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": true,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:ziwei_cloud_stone"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "celestium:penglai_bamboo_sea"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": false,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:emerald_moss_turf"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": true,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:emerald_jade_stone"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "celestium:peach_orchard"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": false,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:golden_celestial_loam"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": true,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:glazed_sunstone"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "celestium:beidou_star_plain"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": false,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:beidou_star_turf"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": true,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:celestial_star_stone"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": [
+            "celestium:celestial_thunder_peak"
+          ]
+        },
+        "then_run": {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": false,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:thunder_jade_stone"
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": true,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "celestium:polished_thunder_jade"
+                }
+              }
+            }
+          ]
+        }
+      },
       {
         "type": "minecraft:condition",
         "if_true": {

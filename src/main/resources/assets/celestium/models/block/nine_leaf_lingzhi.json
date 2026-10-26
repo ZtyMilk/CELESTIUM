@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "celestium:block/nine_leaf_lingzhi"
+  }
+}

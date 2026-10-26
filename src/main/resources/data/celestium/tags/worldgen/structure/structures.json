@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "celestium:south_heavenly_gate",
+    "celestium:lingxiao_celestial_palace",
+    "celestium:celestial_pavilion",
+    "celestium:alchemy_crucible_shrine",
+    "celestium:scripture_pagoda",
+    "celestium:cloud_rainbow_bridge",
+    "celestium:moon_watching_altar",
+    "celestium:seven_treasure_terrace",
+    "celestium:star_observatory_altar",
+    "celestium:thunder_god_pavilion"
+  ]
+}

@@ -4,8 +4,129 @@
     "type": "minecraft:noise",
     "settings": "celestium:celestium_floating_islands",
     "biome_source": {
-      "type": "minecraft:fixed",
-      "biome": "celestium:celestial_plains"
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "celestium:celestial_plains",
+          "parameters": {
+            "temperature": 0.0,
+            "humidity": 0.0,
+            "continentalness": 0.0,
+            "erosion": 0.0,
+            "depth": 0.0,
+            "weirdness": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:yaochi_pool",
+          "parameters": {
+            "temperature": 0.0,
+            "humidity": 0.6,
+            "continentalness": 0.0,
+            "erosion": -0.6,
+            "depth": 0.0,
+            "weirdness": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:sunset_sandal_forest",
+          "parameters": {
+            "temperature": 0.5,
+            "humidity": 0.2,
+            "continentalness": 0.0,
+            "erosion": 0.0,
+            "depth": 0.0,
+            "weirdness": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:lunar_frostpeak",
+          "parameters": {
+            "temperature": -0.9,
+            "humidity": -0.4,
+            "continentalness": 0.0,
+            "erosion": 0.6,
+            "depth": 0.0,
+            "weirdness": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:vermilion_peak",
+          "parameters": {
+            "temperature": 0.9,
+            "humidity": -0.6,
+            "continentalness": 0.0,
+            "erosion": 0.8,
+            "depth": 0.0,
+            "weirdness": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:ziwei_cloud_domain",
+          "parameters": {
+            "temperature": -0.2,
+            "humidity": 0.8,
+            "continentalness": 0.0,
+            "erosion": 0.3,
+            "depth": 0.0,
+            "weirdness": 0.5,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:penglai_bamboo_sea",
+          "parameters": {
+            "temperature": 0.2,
+            "humidity": 0.7,
+            "continentalness": 0.0,
+            "erosion": -0.3,
+            "depth": 0.0,
+            "weirdness": -0.5,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:peach_orchard",
+          "parameters": {
+            "temperature": 0.7,
+            "humidity": 0.4,
+            "continentalness": 0.0,
+            "erosion": -0.2,
+            "depth": 0.0,
+            "weirdness": 0.4,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:beidou_star_plain",
+          "parameters": {
+            "temperature": -0.6,
+            "humidity": -0.6,
+            "continentalness": 0.0,
+            "erosion": 0.2,
+            "depth": 0.0,
+            "weirdness": -0.4,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "celestium:celestial_thunder_peak",
+          "parameters": {
+            "temperature": 0.4,
+            "humidity": 0.9,
+            "continentalness": 0.0,
+            "erosion": 0.7,
+            "depth": 0.0,
+            "weirdness": 0.6,
+            "offset": 0.0
+          }
+        }
+      ]
     }
   }
 }

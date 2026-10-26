@@ -1,0 +1,62 @@
+{
+  "carvers": [],
+  "creature_spawn_probability": 0.08,
+  "downfall": 0.6,
+  "effects": {
+    "foliage_color": "#ab47bc",
+    "grass_color": "#ce93d8",
+    "water_color": "#ba68c8"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "celestium:red_sandal_trees_placed",
+      "celestium:sandal_trees_placed",
+      "celestium:patch_celestial_grass_placed",
+      "celestium:patch_lingzhi_placed",
+      "celestium:patch_polygonum_placed",
+      "celestium:patch_vines_placed",
+      "celestium:patch_palace_lantern_placed"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "celestium:celestial_deer",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 8
+      },
+      {
+        "type": "celestium:nine_tailed_fox",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "celestium:azure_bird",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 4
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.7
+}

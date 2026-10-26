@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "celestium:block/celestial_glazed_tile",
+    "top": "celestium:block/celestial_glazed_tile",
+    "side": "celestium:block/celestial_glazed_tile"
+  }
+}

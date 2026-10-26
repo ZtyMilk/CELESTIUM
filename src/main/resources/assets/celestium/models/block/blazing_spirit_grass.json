@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/cross", "textures": { "cross": "celestium:block/blazing_spirit_grass" } }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "celestium:block/ziwei_spirit_turf"
+  }
+}

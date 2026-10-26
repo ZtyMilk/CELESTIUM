@@ -1,0 +1,59 @@
+{
+  "carvers": [],
+  "creature_spawn_probability": 0.08,
+  "downfall": 0.9,
+  "effects": {
+    "foliage_color": "#66bb6a",
+    "grass_color": "#81c784",
+    "water_color": "#43a047"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "celestium:patch_celestial_grass_placed",
+      "celestium:patch_bamboo_herbs_placed",
+      "celestium:patch_orchid_placed",
+      "celestium:patch_palace_lantern_placed"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "celestium:celestial_crane",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 8
+      },
+      {
+        "type": "celestium:azure_bird",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 6
+      },
+      {
+        "type": "celestium:celestial_hermit",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 3
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.6
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "celestium:south_heavenly_gate",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 26,
+    "separation": 12,
+    "salt": 12345678
+  }
+}

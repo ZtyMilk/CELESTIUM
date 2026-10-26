@@ -1,0 +1,66 @@
+{
+  "carvers": [],
+  "creature_spawn_probability": 0.08,
+  "downfall": 0.4,
+  "effects": {
+    "foliage_color": "#3949ab",
+    "grass_color": "#283593",
+    "water_color": "#1a237e"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "celestium:patch_celestial_grass_placed",
+      "celestium:patch_aurora_flowers_placed",
+      "celestium:patch_soul_reviving_placed",
+      "celestium:patch_palace_lantern_placed",
+      "celestium:patch_incense_burner_placed"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "celestium:moon_rabbit",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 8
+      },
+      {
+        "type": "celestium:celestial_deer",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "celestium:pi_xiu",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 4
+      },
+      {
+        "type": "celestium:bai_ze",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 3
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.2
+}

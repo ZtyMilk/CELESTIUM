@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "celestium:block/celestial_glazed_slab"
+    },
+    "type=top": {
+      "model": "celestium:block/celestial_glazed_slab_top"
+    },
+    "type=double": {
+      "model": "celestium:block/celestial_glazed_tile"
+    }
+  }
+}

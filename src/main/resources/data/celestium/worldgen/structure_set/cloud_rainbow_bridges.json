@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "celestium:cloud_rainbow_bridge",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 24,
+    "separation": 12,
+    "salt": 771122
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "carvers": [],
+  "creature_spawn_probability": 0.08,
+  "downfall": 0.5,
+  "effects": {
+    "foliage_color": "#9575cd",
+    "grass_color": "#b39ddb",
+    "water_color": "#7e57c2"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "celestium:patch_celestial_grass_placed",
+      "celestium:patch_amethyst_herb_placed",
+      "celestium:patch_palace_lantern_placed",
+      "celestium:patch_incense_burner_placed"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "celestium:heavenly_soldier",
+        "maxCount": 3,
+        "minCount": 2,
+        "weight": 8
+      },
+      {
+        "type": "celestium:nine_tailed_fox",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 5
+      },
+      {
+        "type": "celestium:pi_xiu",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 4
+      },
+      {
+        "type": "celestium:heavenly_general",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 3
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.6
+}

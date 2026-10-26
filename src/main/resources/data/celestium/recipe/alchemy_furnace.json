@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CSC",
+    "CFC",
+    "CCC"
+  ],
+  "key": {
+    "C": "celestium:celestial_stone",
+    "S": "minecraft:gold_ingot",
+    "F": "minecraft:furnace"
+  },
+  "result": {
+    "id": "celestium:alchemy_furnace",
+    "count": 1
+  }
+}
