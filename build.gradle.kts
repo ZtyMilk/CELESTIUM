@@ -13,12 +13,6 @@ repositories {
 loom {
 	accessWidenerPath = file("src/main/resources/celestium.accesswidener")
 }
-fabricApi {
-	configureDataGeneration {
-		client = true
-		modId = "celestium"
-	}
-}
 sourceSets {
     main {
         resources {

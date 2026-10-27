@@ -20,10 +20,7 @@
 		],
         "client":[
             "com.github.ztymilk.celestium.client.CelestiumClient"
-        ],
-		"fabric-datagen": [
-			"com.github.ztymilk.celestium.datagenerator.DataGenerator"
-		]
+        ]
 	},
     "accessWidener": "celestium.accesswidener",
 	"mixins": [
