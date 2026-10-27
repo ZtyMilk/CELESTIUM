@@ -12,6 +12,7 @@ import com.github.ztymilk.celestium.registry.CelestiumItemGroups;
 import com.github.ztymilk.celestium.registry.CelestiumItems;
 import com.github.ztymilk.celestium.registry.block.CelestiumBlocks;
 import com.github.ztymilk.celestium.registry.particle.CelestiumParticles;
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
 import com.github.ztymilk.celestium.world.CelestiumWorldSpawner;
 
 public class Celestium implements ModInitializer {
@@ -23,6 +24,7 @@ public class Celestium implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
         CelestiumBlocks.initialize();
         CelestiumItems.initialize();
+        CelestiumSounds.initialize();
         CelestiumParticles.initialize();
         CelestiumEntities.initialize();
         CelestiumItemGroups.initialize();

@@ -1,5 +1,8 @@
 package com.github.ztymilk.celestium.entity.custom;
 
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import org.jspecify.annotations.Nullable;
 
 import net.minecraft.core.BlockPos;
@@ -28,7 +31,7 @@ import net.minecraft.world.phys.Vec3;
 public class SaddantaEntity extends Animal {
     @Override
     protected Vec3 getPassengerAttachmentPoint(net.minecraft.world.entity.Entity entity, net.minecraft.world.entity.EntityDimensions entityDimensions, float f) {
-        return new Vec3(0.0, 3.4, 0.0);
+        return new Vec3(0.0, 4.6, 0.0); // 骑乘于六牙白象须弥八宝莲花法座上
     }
 
     public SaddantaEntity(EntityType<? extends Animal> entityType, Level level) {
@@ -98,5 +101,30 @@ public class SaddantaEntity extends Animal {
     @Override
     public @Nullable AgeableMob getBreedOffspring(ServerLevel level, AgeableMob otherParent) {
         return (AgeableMob) this.getType().create(level, net.minecraft.world.entity.EntitySpawnReason.BREEDING);
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.SADDANTA_AMBIENT;
+    }
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return CelestiumSounds.SADDANTA_HURT;
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return CelestiumSounds.SADDANTA_DEATH;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 }

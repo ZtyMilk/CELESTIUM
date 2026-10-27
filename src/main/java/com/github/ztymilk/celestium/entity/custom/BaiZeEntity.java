@@ -1,6 +1,8 @@
 package com.github.ztymilk.celestium.entity.custom;
 
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -90,5 +92,20 @@ public class BaiZeEntity extends PathfinderMob {
                 sl.sendParticles(ParticleTypes.ENCHANT, p.x, p.y + 1.2, p.z, 5, 0.5, 0.4, 0.5, 0.1);
             }
         }
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.BAI_ZE_AMBIENT;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 }

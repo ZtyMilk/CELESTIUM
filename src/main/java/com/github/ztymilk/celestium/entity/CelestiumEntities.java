@@ -17,10 +17,11 @@ import net.minecraft.world.level.levelgen.Heightmap;
 
 public class CelestiumEntities {
     // 1. 鍏墮鐧借薄 (Saddanta)
+    // 1. 六牙白象 (Saddanta) - 须弥仙山巨象
     public static final ResourceKey<EntityType<?>> SADDANTA_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("saddanta"));
     public static final EntityType<SaddantaEntity> SADDANTA = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, SADDANTA_KEY,
-            EntityType.Builder.of(SaddantaEntity::new, MobCategory.CREATURE).sized(2.6F, 3.4F).build(SADDANTA_KEY));
+            EntityType.Builder.of(SaddantaEntity::new, MobCategory.CREATURE).sized(3.8F, 4.6F).build(SADDANTA_KEY));
 
     // 2. 涓归《浠欓工 (Celestial Crane)
     public static final ResourceKey<EntityType<?>> CELESTIAL_CRANE_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("celestial_crane"));
@@ -40,23 +41,23 @@ public class CelestiumEntities {
             BuiltInRegistries.ENTITY_TYPE, NINE_TAILED_FOX_KEY,
             EntityType.Builder.of(NineTailedFoxEntity::new, MobCategory.CREATURE).sized(0.9F, 1.0F).build(NINE_TAILED_FOX_KEY));
 
-    // 5. 娴佷簯宸ㄩ哺 (Cloud Whale)
+    // 5. 流云巨鲲 (Cloud Whale) - 遮天巨兽
     public static final ResourceKey<EntityType<?>> CLOUD_WHALE_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("cloud_whale"));
     public static final EntityType<CloudWhaleEntity> CLOUD_WHALE = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, CLOUD_WHALE_KEY,
-            EntityType.Builder.of(CloudWhaleEntity::new, MobCategory.AMBIENT).sized(14.0F, 6.0F).build(CLOUD_WHALE_KEY));
+            EntityType.Builder.of(CloudWhaleEntity::new, MobCategory.AMBIENT).sized(18.0F, 8.5F).build(CLOUD_WHALE_KEY));
 
-    // 6. 涔濊壊绁為箍 (Celestial Deer)
+    // 6. 九色神鹿 (Celestial Deer)
     public static final ResourceKey<EntityType<?>> CELESTIAL_DEER_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("celestial_deer"));
     public static final EntityType<CelestialDeerEntity> CELESTIAL_DEER = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, CELESTIAL_DEER_KEY,
             EntityType.Builder.of(CelestialDeerEntity::new, MobCategory.CREATURE).sized(1.2F, 1.8F).build(CELESTIAL_DEER_KEY));
 
-    // 7. 鐜勭帀楹掗簾 (Qilin)
+    // 7. 玄玉麒麟 (Qilin) - 威严神骏
     public static final ResourceKey<EntityType<?>> QILIN_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("qilin"));
     public static final EntityType<QilinEntity> QILIN = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, QILIN_KEY,
-            EntityType.Builder.of(QilinEntity::new, MobCategory.CREATURE).sized(1.6F, 2.0F).build(QILIN_KEY));
+            EntityType.Builder.of(QilinEntity::new, MobCategory.CREATURE).sized(2.2F, 2.6F).build(QILIN_KEY));
 
     // 8. 闈掗妇绁為笩 (Azure Bird)
     public static final ResourceKey<EntityType<?>> AZURE_BIRD_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("azure_bird"));
@@ -94,35 +95,35 @@ public class CelestiumEntities {
             BuiltInRegistries.ENTITY_TYPE, BIFANG_KEY,
             EntityType.Builder.of(BiFangEntity::new, MobCategory.CREATURE).sized(1.0F, 1.8F).build(BIFANG_KEY));
 
-    // 14. 骞讳簯铚冮緳 (Cloud Wyrm)
+    // 14. 幻云蛟龙 (Cloud Wyrm) - 东方苍龙
     public static final ResourceKey<EntityType<?>> CLOUD_WYRM_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("cloud_wyrm"));
     public static final EntityType<CloudWyrmEntity> CLOUD_WYRM = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, CLOUD_WYRM_KEY,
-            EntityType.Builder.of(CloudWyrmEntity::new, MobCategory.AMBIENT).sized(4.8F, 3.2F).build(CLOUD_WYRM_KEY));
+            EntityType.Builder.of(CloudWyrmEntity::new, MobCategory.AMBIENT).sized(6.0F, 4.0F).build(CLOUD_WYRM_KEY));
 
-    // 15. 浜戞父浠欑伒 (Celestial Hermit)
+    // 15. 云游仙灵 (Celestial Hermit)
     public static final ResourceKey<EntityType<?>> CELESTIAL_HERMIT_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("celestial_hermit"));
     public static final EntityType<CelestialHermitEntity> CELESTIAL_HERMIT = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, CELESTIAL_HERMIT_KEY,
             EntityType.Builder.of(CelestialHermitEntity::new, MobCategory.CREATURE).sized(0.6F, 1.9F).build(CELESTIAL_HERMIT_KEY));
 
-    // 16. 杈熼偑鐧芥辰 (Bai Ze)
+    // 16. 辟邪白泽 (Bai Ze)
     public static final ResourceKey<EntityType<?>> BAI_ZE_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("bai_ze"));
     public static final EntityType<BaiZeEntity> BAI_ZE = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, BAI_ZE_KEY,
             EntityType.Builder.of(BaiZeEntity::new, MobCategory.CREATURE).sized(1.4F, 1.8F).build(BAI_ZE_KEY));
 
-    // 17. 琛旂儧骞奸緳 (Candle Dragon)
+    // 17. 衔烛幼龙 (Candle Dragon) - 照天古龙
     public static final ResourceKey<EntityType<?>> CANDLE_DRAGON_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("candle_dragon"));
     public static final EntityType<CandleDragonEntity> CANDLE_DRAGON = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, CANDLE_DRAGON_KEY,
-            EntityType.Builder.of(CandleDragonEntity::new, MobCategory.AMBIENT).sized(5.2F, 3.5F).build(CANDLE_DRAGON_KEY));
+            EntityType.Builder.of(CandleDragonEntity::new, MobCategory.AMBIENT).sized(6.2F, 4.2F).build(CANDLE_DRAGON_KEY));
 
-    // 18. 涔濆ぉ鐜勫嚖 (Rainbow Phoenix)
+    // 18. 九天玄凤 (Rainbow Phoenix) - 百鸟之王
     public static final ResourceKey<EntityType<?>> RAINBOW_PHOENIX_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("rainbow_phoenix"));
     public static final EntityType<RainbowPhoenixEntity> RAINBOW_PHOENIX = Registry.register(
             BuiltInRegistries.ENTITY_TYPE, RAINBOW_PHOENIX_KEY,
-            EntityType.Builder.of(RainbowPhoenixEntity::new, MobCategory.CREATURE).sized(1.2F, 1.5F).build(RAINBOW_PHOENIX_KEY));
+            EntityType.Builder.of(RainbowPhoenixEntity::new, MobCategory.CREATURE).sized(2.6F, 3.2F).build(RAINBOW_PHOENIX_KEY));
 
     // 19. 澶╃璨旇矃 (Pi Xiu)
     public static final ResourceKey<EntityType<?>> PI_XIU_KEY = ResourceKey.create(Registries.ENTITY_TYPE, Celestium.id("pi_xiu"));

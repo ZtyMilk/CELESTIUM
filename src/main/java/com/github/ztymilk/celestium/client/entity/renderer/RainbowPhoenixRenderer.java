@@ -9,17 +9,20 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.resources.Identifier;
 
+/**
+ * 九天玄凤渲染器 - 体型升级至 2.6x 宏伟百鸟之王
+ */
 public class RainbowPhoenixRenderer extends MobRenderer<RainbowPhoenixEntity, LivingEntityRenderState, RainbowPhoenixModel> {
     private static final Identifier TEXTURE = Celestium.id("textures/entity/rainbow_phoenix.png");
 
     public RainbowPhoenixRenderer(EntityRendererProvider.Context context) {
-        super(context, new RainbowPhoenixModel(context.bakeLayer(RainbowPhoenixModel.LAYER_LOCATION)), 0.7F);
+        super(context, new RainbowPhoenixModel(context.bakeLayer(RainbowPhoenixModel.LAYER_LOCATION)), 1.8F);
     }
 
     @Override
     protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
         super.scale(state, poseStack);
-        poseStack.scale(1.15F, 1.15F, 1.15F);
+        poseStack.scale(2.6F, 2.6F, 2.6F);
     }
 
     @Override

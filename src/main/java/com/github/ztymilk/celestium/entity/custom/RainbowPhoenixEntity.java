@@ -1,6 +1,8 @@
 package com.github.ztymilk.celestium.entity.custom;
 
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
@@ -165,5 +167,30 @@ public class RainbowPhoenixEntity extends Mob implements FlyingAnimal {
 
             this.phoenix.getMoveControl().setWantedPosition(targetX, targetY, targetZ, 1.0);
         }
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.RAINBOW_PHOENIX_AMBIENT;
+    }
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return CelestiumSounds.RAINBOW_PHOENIX_HURT;
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return CelestiumSounds.RAINBOW_PHOENIX_DEATH;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 }

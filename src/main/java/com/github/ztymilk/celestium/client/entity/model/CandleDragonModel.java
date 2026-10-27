@@ -115,7 +115,7 @@ public class CandleDragonModel extends EntityModel<LivingEntityRenderState> {
         // 6. 龙躯第四节 (Body 4)
         PartDefinition body4 = body3.addOrReplaceChild("body4", CubeListBuilder.create()
                 .texOffs(60, 52).addBox(-3.0F, -3.0F, 0.0F, 6.0F, 6.0F, 14.0F)
-                .texOffs(100, 52).addBox(-0.5F, -6.0F, 0.0F, 1.0F, 3.0F, 14.0F),
+                .texOffs(88, 28).addBox(-0.5F, -6.0F, 0.0F, 1.0F, 3.0F, 14.0F),
                 PartPose.offset(0.0F, 0.0F, 13.5F));
 
         // 7. 游龙尾部 (Tail)

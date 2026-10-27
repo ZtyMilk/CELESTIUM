@@ -1,5 +1,8 @@
 package com.github.ztymilk.celestium.entity.custom;
 
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.damagesource.DamageSource;
 import org.jspecify.annotations.Nullable;
 
 import net.minecraft.core.BlockPos;
@@ -48,6 +51,21 @@ public class CelestialCraneEntity extends Animal {
     @Override
     protected void checkFallDamage(double y, boolean onGround, BlockState state, BlockPos pos) {
         // Slow falling glide like chickens/birds
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.CELESTIAL_CRANE_AMBIENT;
+    }
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return CelestiumSounds.CELESTIAL_CRANE_HURT;
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return CelestiumSounds.CELESTIAL_CRANE_DEATH;
     }
 
     @Override

@@ -1,6 +1,8 @@
 package com.github.ztymilk.celestium.entity.custom;
 
 import com.github.ztymilk.celestium.registry.block.CelestiumFloraBlocks;
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -97,5 +99,20 @@ public class XuanGuiEntity extends PathfinderMob {
     @Override
     public boolean causeFallDamage(double fallDistance, float multiplier, DamageSource source) {
         return super.causeFallDamage(Math.max(0.0D, fallDistance - 3.0D), multiplier * 0.5F, source);
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.XUAN_GUI_AMBIENT;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 }

@@ -3,7 +3,9 @@ package com.github.ztymilk.celestium.entity.custom;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.Mth;
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -194,7 +196,7 @@ public class CloudWhaleEntity extends Mob implements FlyingAnimal {
 
     @Override
     protected Vec3 getPassengerAttachmentPoint(Entity entity, EntityDimensions entityDimensions, float f) {
-        return new Vec3(0.0, 6.2, 3.2);
+        return new Vec3(0.0, 8.8, 0.0); // 骑乘于背部须弥仙阁法座正中
     }
 
     /**
@@ -282,5 +284,30 @@ public class CloudWhaleEntity extends Mob implements FlyingAnimal {
 
             this.whale.getMoveControl().setWantedPosition(targetX, targetY, targetZ, 1.0);
         }
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.CLOUD_WHALE_AMBIENT;
+    }
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return CelestiumSounds.CLOUD_WHALE_HURT;
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return CelestiumSounds.CLOUD_WHALE_DEATH;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 }

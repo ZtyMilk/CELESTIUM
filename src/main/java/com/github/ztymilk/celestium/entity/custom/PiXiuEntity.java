@@ -1,5 +1,7 @@
 package com.github.ztymilk.celestium.entity.custom;
 
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
+import net.minecraft.sounds.SoundEvent;
 import org.jspecify.annotations.Nullable;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -73,5 +75,20 @@ public class PiXiuEntity extends Animal {
     @Override
     public @Nullable AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
         return (AgeableMob) this.getType().create(serverLevel, net.minecraft.world.entity.EntitySpawnReason.BREEDING);
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.PI_XIU_AMBIENT;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 }

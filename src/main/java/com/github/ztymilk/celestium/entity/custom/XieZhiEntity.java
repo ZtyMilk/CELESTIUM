@@ -1,6 +1,8 @@
 package com.github.ztymilk.celestium.entity.custom;
 
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -111,5 +113,20 @@ public class XieZhiEntity extends PathfinderMob {
     @Override
     public boolean causeFallDamage(double fallDistance, float multiplier, DamageSource source) {
         return super.causeFallDamage(Math.max(0.0D, fallDistance - 4.0D), multiplier * 0.5F, source);
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.XIE_ZHI_AMBIENT;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 }

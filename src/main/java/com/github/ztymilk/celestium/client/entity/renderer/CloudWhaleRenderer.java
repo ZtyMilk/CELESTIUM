@@ -9,18 +9,21 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.resources.Identifier;
 
+/**
+ * 流云巨鲲渲染器 - 缩放至 11.0x 巍峨苍穹遮天巨灵
+ */
 public class CloudWhaleRenderer extends MobRenderer<CloudWhaleEntity, LivingEntityRenderState, CloudWhaleModel> {
     private static final Identifier TEXTURE = Celestium.id("textures/entity/cloud_whale.png");
 
     public CloudWhaleRenderer(EntityRendererProvider.Context context) {
-        super(context, new CloudWhaleModel(context.bakeLayer(CloudWhaleModel.LAYER_LOCATION)), 6.0F);
+        super(context, new CloudWhaleModel(context.bakeLayer(CloudWhaleModel.LAYER_LOCATION)), 8.5F);
     }
 
     @Override
     protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
         super.scale(state, poseStack);
-        // 放大为巡天云海巨兽，并对齐重力与骑乘中心
-        poseStack.scale(8.0F, 8.0F, 8.0F);
+        // 放大为巡天云海巨兽，背负青天朝沧溟
+        poseStack.scale(11.0F, 11.0F, 11.0F);
         poseStack.translate(0.0D, -0.45D, 0.0D);
     }
 

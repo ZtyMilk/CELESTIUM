@@ -2,10 +2,7 @@ package com.github.ztymilk.celestium.world;
 
 import com.github.ztymilk.celestium.Celestium;
 import com.github.ztymilk.celestium.entity.CelestiumEntities;
-import com.github.ztymilk.celestium.entity.custom.CloudWhaleEntity;
-import com.github.ztymilk.celestium.entity.custom.CloudWyrmEntity;
-import com.github.ztymilk.celestium.entity.custom.RainbowPhoenixEntity;
-import com.github.ztymilk.celestium.entity.custom.CandleDragonEntity;
+import com.github.ztymilk.celestium.entity.custom.*;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.core.BlockPos;
@@ -97,7 +94,13 @@ public class CelestiumWorldSpawner {
                 }
             }
 
-            // 仅对超过 140 格极远处的野生仙兽进行回收（避免内存堆积）
+            // 稀有大型天界神兽（鲲、龙、凤、麒麟、白泽、白象、貔貅、玄龟等）极度重要，玩家离开也绝不删除，保持常驻世界
+            if (isImportantRareBeast(m)) {
+                wildMobs.add(m);
+                continue;
+            }
+
+            // 仅对超过 140 格极远处的普通小生物进行回收（避免内存堆积）
             if (minDistanceSq > 140.0 * 140.0) {
                 m.discard();
                 continue;
@@ -106,33 +109,8 @@ public class CelestiumWorldSpawner {
             wildMobs.add(m);
         }
 
-        // 限制巡天巨鲲：全维度野生最多 2 只
-        List<CloudWhaleEntity> whales = new ArrayList<>();
-        for (Mob m : wildMobs) {
-            if (m instanceof CloudWhaleEntity whale && whale.isAlive()) {
-                whales.add(whale);
-            }
-        }
-        if (whales.size() > 2) {
-            whales.sort(Comparator.comparingDouble(w -> getMinPlayerDistSq(w, players)));
-            for (int i = 2; i < whales.size(); i++) {
-                whales.get(i).discard();
-            }
-        }
-
-        // 限制高空神龙/烛龙/玄凤：全维度野生最多 4 只
-        List<Mob> dragons = new ArrayList<>();
-        for (Mob m : wildMobs) {
-            if (m.isAlive() && (m instanceof CloudWyrmEntity || m instanceof CandleDragonEntity || m instanceof RainbowPhoenixEntity)) {
-                dragons.add(m);
-            }
-        }
-        if (dragons.size() > 4) {
-            dragons.sort(Comparator.comparingDouble(d -> getMinPlayerDistSq(d, players)));
-            for (int i = 4; i < dragons.size(); i++) {
-                dragons.get(i).discard();
-            }
-        }
+        // 统计巡天巨鲲：若全维度野生已有 2 只以上，不再额外生成，但绝不删除已有神兽
+        // 统计高空神龙/烛龙/玄凤：若已有 4 只以上，不再额外生成，但绝不删除已有神兽
 
         // 重新统计存活的有效天庭仙兽
         List<Mob> activeMobs = allLoadedMobs.stream().filter(Mob::isAlive).toList();
@@ -341,5 +319,21 @@ public class CelestiumWorldSpawner {
             }
             default -> CelestiumEntities.CELESTIAL_CRANE;
         };
+    }
+
+    private static boolean isImportantRareBeast(Mob m) {
+        return m instanceof CloudWhaleEntity
+                || m instanceof CandleDragonEntity
+                || m instanceof CloudWyrmEntity
+                || m instanceof RainbowPhoenixEntity
+                || m instanceof BaiZeEntity
+                || m instanceof QilinEntity
+                || m instanceof SaddantaEntity
+                || m instanceof PiXiuEntity
+                || m instanceof XuanGuiEntity
+                || m instanceof XieZhiEntity
+                || m instanceof CelestialDeerEntity
+                || m instanceof GoldenCrowEntity
+                || m instanceof CelestialHermitEntity;
     }
 }

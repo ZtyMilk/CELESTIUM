@@ -9,18 +9,21 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.resources.Identifier;
 
+/**
+ * 衔烛照天·上古烛龙渲染器 - 缩放至 6.5x 宏伟赤金蛇神龙躯
+ */
 public class CandleDragonRenderer extends MobRenderer<CandleDragonEntity, LivingEntityRenderState, CandleDragonModel> {
     private static final Identifier TEXTURE = Celestium.id("textures/entity/candle_dragon.png");
 
     public CandleDragonRenderer(EntityRendererProvider.Context context) {
-        super(context, new CandleDragonModel(context.bakeLayer(CandleDragonModel.LAYER_LOCATION)), 2.8F);
+        super(context, new CandleDragonModel(context.bakeLayer(CandleDragonModel.LAYER_LOCATION)), 3.8F);
     }
 
     @Override
     protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
         super.scale(state, poseStack);
-        // 衔烛之神·上古烛龙：5.0倍辉煌尺度，赤金日轮照耀万壑
-        poseStack.scale(5.0F, 5.0F, 5.0F);
+        // 衔烛之神·上古烛龙：6.5倍辉煌尺度，赤金日轮照耀万壑
+        poseStack.scale(6.5F, 6.5F, 6.5F);
     }
 
     @Override

@@ -1,0 +1,248 @@
+{
+  "entity.cloud_whale.ambient": {
+    "subtitle": "subtitles.celestium.entity.cloud_whale.ambient",
+    "sounds": [
+      { "name": "minecraft:ambient/underwater/enter", "volume": 1.5, "pitch": 0.4 },
+      { "name": "minecraft:entity/polar_bear/ambient", "volume": 1.4, "pitch": 0.35 }
+    ]
+  },
+  "entity.cloud_whale.hurt": {
+    "subtitle": "subtitles.celestium.entity.cloud_whale.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/polar_bear/hurt", "volume": 1.2, "pitch": 0.4 }
+    ]
+  },
+  "entity.cloud_whale.death": {
+    "subtitle": "subtitles.celestium.entity.cloud_whale.death",
+    "sounds": [
+      { "name": "minecraft:entity/polar_bear/death", "volume": 1.5, "pitch": 0.35 }
+    ]
+  },
+  "entity.cloud_wyrm.ambient": {
+    "subtitle": "subtitles.celestium.entity.cloud_wyrm.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/phantom/ambient", "volume": 1.2, "pitch": 0.6 }
+    ]
+  },
+  "entity.cloud_wyrm.roar": {
+    "subtitle": "subtitles.celestium.entity.cloud_wyrm.roar",
+    "sounds": [
+      { "name": "minecraft:entity/ender_dragon/growl", "volume": 1.4, "pitch": 0.85 }
+    ]
+  },
+  "entity.cloud_wyrm.hurt": {
+    "subtitle": "subtitles.celestium.entity.cloud_wyrm.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/ender_dragon/hurt", "volume": 1.0, "pitch": 0.9 }
+    ]
+  },
+  "entity.cloud_wyrm.death": {
+    "subtitle": "subtitles.celestium.entity.cloud_wyrm.death",
+    "sounds": [
+      { "name": "minecraft:entity/ender_dragon/death", "volume": 1.5, "pitch": 0.85 }
+    ]
+  },
+  "entity.candle_dragon.ambient": {
+    "subtitle": "subtitles.celestium.entity.candle_dragon.ambient",
+    "sounds": [
+      { "name": "minecraft:block/fire/ambient", "volume": 1.2, "pitch": 0.8 },
+      { "name": "minecraft:entity/blaze/ambient", "volume": 1.0, "pitch": 0.6 }
+    ]
+  },
+  "entity.candle_dragon.roar": {
+    "subtitle": "subtitles.celestium.entity.candle_dragon.roar",
+    "sounds": [
+      { "name": "minecraft:entity/warden/roar", "volume": 1.5, "pitch": 0.9 }
+    ]
+  },
+  "entity.candle_dragon.hurt": {
+    "subtitle": "subtitles.celestium.entity.candle_dragon.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/warden/hurt", "volume": 1.0, "pitch": 0.9 }
+    ]
+  },
+  "entity.candle_dragon.death": {
+    "subtitle": "subtitles.celestium.entity.candle_dragon.death",
+    "sounds": [
+      { "name": "minecraft:entity/warden/death", "volume": 1.5, "pitch": 0.8 }
+    ]
+  },
+  "entity.rainbow_phoenix.ambient": {
+    "subtitle": "subtitles.celestium.entity.rainbow_phoenix.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/parrot/ambient", "volume": 1.0, "pitch": 0.75 }
+    ]
+  },
+  "entity.rainbow_phoenix.cry": {
+    "subtitle": "subtitles.celestium.entity.rainbow_phoenix.cry",
+    "sounds": [
+      { "name": "minecraft:entity/phantom/flap", "volume": 1.2, "pitch": 1.3 },
+      { "name": "minecraft:entity/firework_rocket/twinkle", "volume": 1.2, "pitch": 1.1 }
+    ]
+  },
+  "entity.rainbow_phoenix.hurt": {
+    "subtitle": "subtitles.celestium.entity.rainbow_phoenix.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/parrot/hurt", "volume": 1.0, "pitch": 0.8 }
+    ]
+  },
+  "entity.rainbow_phoenix.death": {
+    "subtitle": "subtitles.celestium.entity.rainbow_phoenix.death",
+    "sounds": [
+      { "name": "minecraft:entity/parrot/death", "volume": 1.2, "pitch": 0.75 }
+    ]
+  },
+  "entity.qilin.ambient": {
+    "subtitle": "subtitles.celestium.entity.qilin.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/horse/ambient", "volume": 1.0, "pitch": 1.2 },
+      { "name": "minecraft:block/amethyst_block/chime", "volume": 0.8, "pitch": 1.5 }
+    ]
+  },
+  "entity.qilin.hurt": {
+    "subtitle": "subtitles.celestium.entity.qilin.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/horse/hurt", "volume": 1.0, "pitch": 1.1 }
+    ]
+  },
+  "entity.qilin.death": {
+    "subtitle": "subtitles.celestium.entity.qilin.death",
+    "sounds": [
+      { "name": "minecraft:entity/horse/death", "volume": 1.2, "pitch": 1.0 }
+    ]
+  },
+  "entity.saddanta.ambient": {
+    "subtitle": "subtitles.celestium.entity.saddanta.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/ravager/ambient", "volume": 1.3, "pitch": 0.6 }
+    ]
+  },
+  "entity.saddanta.roar": {
+    "subtitle": "subtitles.celestium.entity.saddanta.roar",
+    "sounds": [
+      { "name": "minecraft:entity/ravager/roar", "volume": 1.5, "pitch": 0.55 }
+    ]
+  },
+  "entity.saddanta.hurt": {
+    "subtitle": "subtitles.celestium.entity.saddanta.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/ravager/hurt", "volume": 1.1, "pitch": 0.65 }
+    ]
+  },
+  "entity.saddanta.death": {
+    "subtitle": "subtitles.celestium.entity.saddanta.death",
+    "sounds": [
+      { "name": "minecraft:entity/ravager/death", "volume": 1.5, "pitch": 0.55 }
+    ]
+  },
+  "entity.celestial_crane.ambient": {
+    "subtitle": "subtitles.celestium.entity.celestial_crane.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/parrot/imitate/bat", "volume": 1.0, "pitch": 0.85 },
+      { "name": "minecraft:block/amethyst_block/chime", "volume": 0.6, "pitch": 1.6 }
+    ]
+  },
+  "entity.celestial_crane.hurt": {
+    "subtitle": "subtitles.celestium.entity.celestial_crane.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/parrot/hurt", "volume": 0.9, "pitch": 1.1 }
+    ]
+  },
+  "entity.celestial_crane.death": {
+    "subtitle": "subtitles.celestium.entity.celestial_crane.death",
+    "sounds": [
+      { "name": "minecraft:entity/parrot/death", "volume": 1.0, "pitch": 1.0 }
+    ]
+  },
+  "entity.nine_tailed_fox.ambient": {
+    "subtitle": "subtitles.celestium.entity.nine_tailed_fox.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/fox/ambient", "volume": 1.0, "pitch": 1.15 }
+    ]
+  },
+  "entity.nine_tailed_fox.hurt": {
+    "subtitle": "subtitles.celestium.entity.nine_tailed_fox.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/fox/hurt", "volume": 1.0, "pitch": 1.1 }
+    ]
+  },
+  "entity.nine_tailed_fox.death": {
+    "subtitle": "subtitles.celestium.entity.nine_tailed_fox.death",
+    "sounds": [
+      { "name": "minecraft:entity/fox/death", "volume": 1.2, "pitch": 1.05 }
+    ]
+  },
+  "entity.bifang.ambient": {
+    "subtitle": "subtitles.celestium.entity.bifang.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/blaze/shoot", "volume": 0.8, "pitch": 1.2 },
+      { "name": "minecraft:entity/parrot/ambient", "volume": 1.0, "pitch": 1.2 }
+    ]
+  },
+  "entity.bifang.cry": {
+    "subtitle": "subtitles.celestium.entity.bifang.cry",
+    "sounds": [
+      { "name": "minecraft:entity/blaze/shoot", "volume": 1.2, "pitch": 1.4 }
+    ]
+  },
+  "entity.golden_crow.ambient": {
+    "subtitle": "subtitles.celestium.entity.golden_crow.ambient",
+    "sounds": [
+      { "name": "minecraft:block/fire/ambient", "volume": 1.0, "pitch": 1.1 },
+      { "name": "minecraft:entity/phantom/ambient", "volume": 1.0, "pitch": 1.3 }
+    ]
+  },
+  "entity.golden_crow.cry": {
+    "subtitle": "subtitles.celestium.entity.golden_crow.cry",
+    "sounds": [
+      { "name": "minecraft:entity/firework_rocket/blast", "volume": 1.2, "pitch": 1.3 }
+    ]
+  },
+  "entity.bai_ze.ambient": {
+    "subtitle": "subtitles.celestium.entity.bai_ze.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/goat/ambient", "volume": 0.8, "pitch": 0.85 },
+      { "name": "minecraft:block/amethyst_block/chime", "volume": 0.8, "pitch": 1.2 }
+    ]
+  },
+  "entity.pi_xiu.ambient": {
+    "subtitle": "subtitles.celestium.entity.pi_xiu.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/panda/aggressive_ambient", "volume": 1.1, "pitch": 0.85 },
+      { "name": "minecraft:entity/player/levelup", "volume": 0.5, "pitch": 1.6 }
+    ]
+  },
+  "entity.celestial_deer.ambient": {
+    "subtitle": "subtitles.celestium.entity.celestial_deer.ambient",
+    "sounds": [
+      { "name": "minecraft:block/amethyst_block/chime", "volume": 1.0, "pitch": 1.4 },
+      { "name": "minecraft:entity/sniffer/happy", "volume": 0.8, "pitch": 1.3 }
+    ]
+  },
+  "entity.xuan_gui.ambient": {
+    "subtitle": "subtitles.celestium.entity.xuan_gui.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/turtle/ambient_land", "volume": 1.2, "pitch": 0.7 }
+    ]
+  },
+  "entity.xie_zhi.ambient": {
+    "subtitle": "subtitles.celestium.entity.xie_zhi.ambient",
+    "sounds": [
+      { "name": "minecraft:block/bell/use", "volume": 0.8, "pitch": 1.2 },
+      { "name": "minecraft:entity/iron_golem/step", "volume": 1.0, "pitch": 0.8 }
+    ]
+  },
+  "entity.azure_bird.ambient": {
+    "subtitle": "subtitles.celestium.entity.azure_bird.ambient",
+    "sounds": [
+      { "name": "minecraft:entity/parrot/ambient", "volume": 1.0, "pitch": 1.35 },
+      { "name": "minecraft:block/amethyst_block/chime", "volume": 0.7, "pitch": 1.6 }
+    ]
+  },
+  "entity.azure_bird.hurt": {
+    "subtitle": "subtitles.celestium.entity.azure_bird.hurt",
+    "sounds": [
+      { "name": "minecraft:entity/parrot/hurt", "volume": 1.0, "pitch": 1.2 }
+    ]
+  }
+}

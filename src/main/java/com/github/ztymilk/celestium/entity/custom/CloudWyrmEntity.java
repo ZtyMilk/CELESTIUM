@@ -1,6 +1,8 @@
 package com.github.ztymilk.celestium.entity.custom;
 
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
@@ -147,7 +149,7 @@ public class CloudWyrmEntity extends Mob implements FlyingAnimal {
 
     @Override
     protected Vec3 getPassengerAttachmentPoint(Entity entity, EntityDimensions entityDimensions, float f) {
-        return new Vec3(0.0, 3.8, 1.6);
+        return new Vec3(0.0, 4.2, 1.8);
     }
 
     @Override
@@ -248,6 +250,31 @@ public class CloudWyrmEntity extends Mob implements FlyingAnimal {
 
             this.wyrm.getMoveControl().setWantedPosition(targetX, targetY, targetZ, 1.0);
         }
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.CLOUD_WYRM_AMBIENT;
+    }
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return CelestiumSounds.CLOUD_WYRM_HURT;
+    }
+
+    @Override
+    protected SoundEvent getDeathSound() {
+        return CelestiumSounds.CLOUD_WYRM_DEATH;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 }
 

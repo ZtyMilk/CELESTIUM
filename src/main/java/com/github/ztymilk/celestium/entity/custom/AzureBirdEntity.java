@@ -1,5 +1,7 @@
 package com.github.ztymilk.celestium.entity.custom;
 
+import com.github.ztymilk.celestium.sound.CelestiumSounds;
+import net.minecraft.sounds.SoundEvent;
 import org.jspecify.annotations.Nullable;
 
 import net.minecraft.core.BlockPos;
@@ -84,6 +86,26 @@ public class AzureBirdEntity extends Animal implements FlyingAnimal {
     @Override
     public boolean isFood(ItemStack stack) {
         return stack.is(Items.GLOW_BERRIES) || stack.is(Items.SWEET_BERRIES);
+    }
+
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return CelestiumSounds.AZURE_BIRD_AMBIENT;
+    }
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return CelestiumSounds.AZURE_BIRD_HURT;
+    }
+
+    @Override
+    public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+        return false;
+    }
+
+    @Override
+    public boolean requiresCustomPersistence() {
+        return true;
     }
 
     @Override

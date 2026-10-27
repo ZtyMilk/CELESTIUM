@@ -9,18 +9,21 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.resources.Identifier;
 
+/**
+ * 腾云苍龙·巡天灵蛟渲染器 - 缩放至 6.2x 盘旋九天的巍峨神龙
+ */
 public class CloudWyrmRenderer extends MobRenderer<CloudWyrmEntity, LivingEntityRenderState, CloudWyrmModel> {
     private static final Identifier TEXTURE = Celestium.id("textures/entity/cloud_wyrm.png");
 
     public CloudWyrmRenderer(EntityRendererProvider.Context context) {
-        super(context, new CloudWyrmModel(context.bakeLayer(CloudWyrmModel.LAYER_LOCATION)), 2.6F);
+        super(context, new CloudWyrmModel(context.bakeLayer(CloudWyrmModel.LAYER_LOCATION)), 3.6F);
     }
 
     @Override
     protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
         super.scale(state, poseStack);
-        // 宏伟东方苍龙：4.8倍辉煌霸气尺度，盘旋九天游云掠雾
-        poseStack.scale(4.8F, 4.8F, 4.8F);
+        // 宏伟东方苍龙：6.2倍辉煌霸气尺度，盘旋九天游云掠雾
+        poseStack.scale(6.2F, 6.2F, 6.2F);
     }
 
     @Override

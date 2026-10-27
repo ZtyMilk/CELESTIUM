@@ -9,18 +9,20 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.resources.Identifier;
 
+/**
+ * 六牙白象渲染器 - 缩放至 2.65x 巍峨须弥神象体魄
+ */
 public class SaddantaRenderer extends MobRenderer<SaddantaEntity, LivingEntityRenderState, SaddantaModel> {
     private static final Identifier TEXTURE = Celestium.id("textures/entity/saddanta.png");
 
     public SaddantaRenderer(EntityRendererProvider.Context context) {
-        super(context, new SaddantaModel(context.bakeLayer(SaddantaModel.LAYER_LOCATION)), 2.2F);
+        super(context, new SaddantaModel(context.bakeLayer(SaddantaModel.LAYER_LOCATION)), 3.2F);
     }
 
     @Override
     protected void scale(LivingEntityRenderState state, PoseStack poseStack) {
         super.scale(state, poseStack);
-        // 六牙白象巍峨体魄
-        poseStack.scale(1.8F, 1.8F, 1.8F);
+        poseStack.scale(2.65F, 2.65F, 2.65F);
     }
 
     @Override
