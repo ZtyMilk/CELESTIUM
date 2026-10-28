@@ -1,0 +1,15 @@
+{
+  "name": "celestium:pan_tao_celestial_spring",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "celestium:pan_tao_celestial_spring",
+        "projection": "rigid",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
